@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Code Review Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>AI Code Review Assistant</h1>
+    <p>Paste your source code below and get instant review suggestions.</p>
+
+    <label for="language">Select Programming Language:</label>
+    <select id="language">
+        <option value="Python">Python</option>
+        <option value="C">C</option>
+        <option value="Java">Java</option>
+    </select>
+
+    <br><br>
+
+    <textarea
+        id="code"
+        placeholder="Paste your code here..."
+    ></textarea>
+
+    <br>
+
+    <button onclick="reviewCode()">Review Code</button>
+
+    <h2>Review Result:</h2>
+    <pre id="output">Waiting for code review...</pre>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
